@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,600;1,800&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilos-globales.css">
+        <link rel="icon" href="img/scalabl-icon.ico">
+        <script src="js/events.js" defer></script>
+        <title>SCALABL</title>
+    </head>
+    <body>
+        <!-- HEADER // NAV // MENU MOBILE -->
+        <header class="container-fluid header">
+            <nav class="navbar navbar-header navbar-expand-lg">
+                <div class="container d-lg-flex">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" alt="Logo Scalabl">
+                    </a>
+
+                    <button class="navbar-toggler" id="buttonMenu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <img class="menu-toggler" src="img/bar-mobile.svg" alt="Menu">
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item px-lg-5">
+                                <a class="nav-link nav-link-bolder" href="#">Curso Online</a>
+                            </li>
+                            <li class="nav-item dropdown ps-lg-5">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLinkRed" role="button" data-bs-toggle="dropdown" aria-expanded="false">Red Global</a>
+                                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownLinkRed">
+                                    <li>
+                                        <a class="dropdown-item dropdown-item-menu" href="#">Graduados</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item dropdown-item-menu" href="#">Empresas</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item dropdown-item-menu" href="#">Testimonios</a>
+                                    </li> 
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown ps-lg-5">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLinkContenido" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contenido</a>
+                                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownLinkContenido">
+                                    <li>
+                                        <a class="dropdown-item dropdown-item-menu" href="#">Artículos</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item dropdown-item-menu" href="#">Videos</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item dropdown-item-menu" href="#">Podscats</a>
+                                    </li> 
+                                </ul>        
+                            </li>
+                            <li class="nav-item dropdown ps-lg-5">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLinkLibros" role="button" data-bs-toggle="dropdown" aria-expanded="false">Libros</a>
+                                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownLinkLibros">
+                                    <li>
+                                        <a class="dropdown-item dropdown-item-menu" href="#">Literatura Recomendada</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item dropdown-item-menu" href="#">Colección Scalabl</a>
+                                    </li>
+                                </ul>            
+                            </li>
+                            <li class="nav-item px-lg-5">
+                                <a class="nav-link" href="#">Prensa</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav flex-sm-nowrap align-items-sm-center text-sm-center" id="languageLinks">
+                            <div class="pe-2">
+                                <img src="img/globe.png" alt="Lenguajes">
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-bolder" href="#">EN</a>
+                            </li>
+                            <div class="align-self-center">
+                                <span>-</span>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-bolder" href="#">POR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- BANNER -->
+            <div class="container banner position-relative">
+                <img src="img/banner.png" alt="Banner Scalabl Business Review">
+                <h1 class="title-banner position-absolute d-none d-sm-none d-md-none d-lg-block text-white">SCALABL BUSINESS REVIEW</h1>
+            </div>
+        </header>
+        <!-- SECCION FORMULARIO -->
+        <section class="container">
+            <form action="#" class="form-search row d-flex justify-content-center mt-sm-1 p-3">
+                <div class="col-lg-8 pb-2">
+                    <input type="text" class="form-control" placeholder="Puedes buscar por título o por autor">
+                </div>
+                <div class="box-btn-form col-lg-2"> 
+                    <button class="btn btn-form mx-auto px-5" type="submit">Buscar</button>
+                </div>
+            </form>
+        </section>
+        <!-- SECCION CARDS PODCASTS -->
+        <section class="section-podcast container">
+                <ul class="card-group row row-cols-1 row-cols-md-3 g-4 list-unstyled">
+                    <li class="col">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between">
+                                <div>
+                                    <img class="microphone-icon" src="img/microphone.svg" alt="Icono Microfono">
+                                    <p class="d-inline">Podcast</p>
+                                </div>
+                                <p>#Contenido de la clase</p>
+                            </div>
+                            <div class="card-body d-flex row">
+                                <img src="img/imagen-ecosistema.png" alt="Podcast Ecosistema">
+                                <h4 class="card-title">El ecosistema de la Startup actual:<span>Los unicornios</span></h4>
+                            </div>
+                            <button class="btn">Compartir este Podcast</button>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between">
+                                <div>
+                                    <img class="microphone-icon" src="img/microphone.svg" alt="Icono Microfono">
+                                    <p class="d-inline">Podcast</p>
+                                </div>
+                                <p>#Contenido de la clase</p>
+                            </div>
+                            <div class="card-body d-flex row">
+                                <img src="img/imagen-ecosistema.png" alt="Podcast Ecosistema">
+                                <h4 class="card-title">El ecosistema de la Startup actual:<span>Los unicornios</span></h4>
+                            </div>
+                            <button class="btn">Compartir este Podcast</button>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between">
+                                <div>
+                                    <img class="microphone-icon" src="img/microphone.svg" alt="Icono Microfono">
+                                    <p class="d-inline">Podcast</p>
+                                </div>
+                                <p>#Contenido de la clase</p>
+                            </div>
+                            <div class="card-body d-flex row">
+                                <img src="img/imagen-ecosistema.png" alt="Podcast Ecosistema">
+                                <h4 class="card-title">El ecosistema de la Startup actual:<span>Los unicornios</span></h4>
+                            </div>
+                            <button class="btn">Compartir este Podcast</button>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between">
+                                <div>
+                                    <img class="microphone-icon" src="img/microphone.svg" alt="Icono Microfono">
+                                    <p class="d-inline">Podcast</p>
+                                </div>
+                                <p>#Contenido de la clase</p>
+                            </div>
+                            <div class="card-body d-flex row">
+                                <img src="img/imagen-ecosistema.png" alt="Podcast Ecosistema">
+                                <h4 class="card-title">El ecosistema de la Startup actual:<span>Los unicornios</span></h4>
+                            </div>
+                            <button class="btn">Compartir este Podcast</button>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between">
+                                <div>
+                                    <img class="microphone-icon" src="img/microphone.svg" alt="Icono Microfono">
+                                    <p class="d-inline">Podcast</p>
+                                </div>
+                                <p>#Contenido de la clase</p>
+                            </div>
+                            <div class="card-body d-flex row">
+                                <img src="img/imagen-ecosistema.png" alt="Podcast Ecosistema">
+                                <h4 class="card-title">El ecosistema de la Startup actual:<span>Los unicornios</span></h4>
+                            </div>
+                            <button class="btn">Compartir este Podcast</button>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between">
+                                <div>
+                                    <img class="microphone-icon" src="img/microphone.svg" alt="Icono Microfono">
+                                    <p class="d-inline">Podcast</p>
+                                </div>
+                                <p>#Contenido de la clase</p>
+                            </div>
+                            <div class="card-body d-flex row">
+                                <img src="img/imagen-ecosistema.png" alt="Podcast Ecosistema">
+                                <h4 class="card-title">El ecosistema de la Startup actual:<span>Los unicornios</span></h4>
+                            </div>
+                            <button class="btn">Compartir este Podcast</button>
+                        </div>
+                    </li>
+                </ul>
+        </section>
+
+        <footer class="container mt-4">
+            <nav class="navbar navbar-footer">
+                <div class="d-lg-flex align-items-stretch justify-content-center d-none d-lg-block d-sm-none d-md-none" id="fullScreenNavFooter">
+                    <ul class="col-2 navbar-nav navbar-nav-spacing">
+                        <li class="navbar-footer-item-principal">SCALABL</li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gradudados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Empresas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Prensa</a>
+                        </li>
+                    </ul>
+                    <ul class="col-2 navbar-nav navbar-nav-spacing">
+                        <li class="navbar-footer-item-principal">CONTENIDO</li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Artículos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Canal de Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Canal de Podcasts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Colección de Libros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Literatura Recomendada</a>
+                        </li>
+                    </ul>
+                    <ul class="col-2 navbar-nav navbar-nav-spacing">
+                        <li class="navbar-footer-item-principal">FOLLOW FRANCISCO</li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LinkeIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Facebook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Twitter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Medium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quora</a>
+                        </li>
+                    </ul>
+                    <ul class="col-2 navbar-nav navbar-nav-spacing">
+                        <li class="navbar-footer-item-principal">SOBRE SCALABL</li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="#">
+                                <img class="d-inline pb-1 wsp-icon" src="Img/wsp-icon.svg" alt="">
+                                <p class="d-inline p-0 m-0 ">Contactanos</p>
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Atención al cliente</a></li>
+                        <li class="nav-item d-inline"><a class="nav-link" href="#">Trabajá con nosotros</a></li>
+                        <li class="nav-item nav-item-location pt-3">
+                            <a class="nav-link link-location" href="#">Innovation Centre, Gallows Hill CV34, Warwick, London</a>
+                        </li>
+                    </ul>
+                    <form action="#" class="col-3 position-relative">
+                        <p class="navbar-footer-item-principal">RECIBE NUESTRO NEWSLETTER</p>     
+                        <input type="text" class="form-control my-1" placeholder="Nombre Completo">
+                        <input type="text" class="form-control" placeholder="Email">
+                        <button class="btn btn-form position-absolute my-1 end-0" type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="d-block d-sm-block d-lg-none d-mb-block collapse navbar-collapse" id="navbarNavDropdownMobile">
+                
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown px-2 my-2 navbar-footer-item-principal">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownScalabl" role="button" data-bs-toggle="dropdown" aria-expanded="false">SCALABL</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownScalabl">
+                                <li>
+                                    <a class="dropdown-item  dropdown-item-nav" href="#">Cursos</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-nav" href="#">Testimonios</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Gradudados</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Empresas</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Prensa</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown px-2 my-2 navbar-footer-item-principal">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContenido" role="button" data-bs-toggle="dropdown" aria-expanded="false">CONTENIDO</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownContenido">
+                                <li>
+                                    <a class="dropdown-item" href="#">Artículos</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Canal de Videos</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Canal de Podcasts</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Colección de Libros</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Literatura Recomendada</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown px-2 my-2 navbar-footer-item-principal">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFollow" role="button" data-bs-toggle="dropdown" aria-expanded="false">FOLLOW FRANSCISCO</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownFollow">
+                                <li>
+                                    <a class="dropdown-item" href="#">LinkedIn</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Instagram</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Twitter</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Medium</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Quora</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown px-2 my-2 navbar-footer-item-principal">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSobreScalabl" role="button" data-bs-toggle="dropdown" aria-expanded="false">SOBRE SCALABL</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownSobreScalabl">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img class="d-inline wsp-icon" src="img/wsp-icon.svg" alt="Icono WSP">
+                                        <p class="d-inline p-0 m-0">Contactanos</p>    
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Atención al cliente</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Trabaja con nosotros</a>
+                                </li>
+                                <li class="dropdown-item-location">
+                                    <a class="dropdown-item dropdown-link-location" href="#">Innovation Centre, Gallows Hill CV34, Warwick, London</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown px-2 my-2 navbar-footer-item-principal">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownScalabl" role="button" data-bs-toggle="dropdown" aria-expanded="false">RECIBE NUESTRO NEWSLETTER</a>
+                            <form class="dropdown-menu position-relative ps-2 mb-3" aria-labelledby="navbarDropdownScalabl">
+                                <input type="text" class="form-control my-1" placeholder="Nombre Completo">
+                                <input type="text" class="form-control" placeholder="Email">
+                                <button class="btn btn-form position-absolute my-1 end-0" type="submit">Enviar</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <ul class="social-media-list d-flex justify-content-center list-unstyled">
+                <li>
+                    <a href="#">
+                        <img src="img/youtube-icon.svg" alt="Icono Youtube">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/facebook-icon.svg" alt="Icono Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/twitter-icon.svg" alt="Icono Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/pinterest-icon.svg" alt="Icono Pinterest">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/tiktok-icon.svg" alt="Icono Tiktok">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/instagram-icon.svg" alt="Icono Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/linkedin-icon.svg" alt="Icono LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <!-- CDN BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </body>
+</html>
