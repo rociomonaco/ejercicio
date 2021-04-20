@@ -121,6 +121,11 @@ a:hover{
 }
 .card-header{
     font-weight:600;
+    padding: 0 .5rem; 
+    
+}
+.card-header p{
+    margin-top: 1rem;
 }
 .microphone-icon{
     width: 0.5rem;
